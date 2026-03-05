@@ -1,7 +1,7 @@
 import type { ZudokuConfig } from "zudoku";
 
 const config: ZudokuConfig = {
-  basePath: "/.publicdocs",
+  basePath: "/",
   site: {
     logo: {
       src: { light: "/logo.svg", dark: "/logo.svg" },
