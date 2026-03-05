@@ -39,6 +39,26 @@ const config: ZudokuConfig = {
         }
       ],
     },
+    {
+    type: "category",
+      label: "CLI",
+      items: [
+        "/cli/introduction",
+        {
+          type: "category",
+          label: "CLI reference",
+          items: [
+            {
+              type: "category",
+              label: "App",
+              items: [
+                "/cli/app/commands",
+              ],
+            }
+          ],
+        }
+      ]
+    }
   ],
   redirects: [{ from: "/", to: "/introduction" }],
   metadata : {

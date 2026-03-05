@@ -1,0 +1,30 @@
+---
+title: akuzo app
+---
+
+# Commands
+
+| Name | Description |
+| akuzo app create | Create a new app |
+| akuzo app deploy | Deploy the app to the cloud |
+| akuzo app delete | Delete the app from the cloud |
+
+# akuzo app create
+Create a new app with the following command:
+
+```bash
+akuzo app create    --name
+                    --sku
+                    [--type]
+```
+
+## Parameters
+`--name` (required): The name of the app. Must be unique within the environment.
+
+`--sku` (required): The SKU of the app. Valid values are `F1`, `D1`, `B1`, `B2`, `B3`, `S1`, `S2`, `S3`, `P1v2`, `P2v2`, and `P3v2`.
+
+`--type` (optional): The type of the app. 
+| Property | Value |
+| --- | --- |
+| Default value | `web` |
+| Accepted values | `web`, `worker`, `spa` |
