@@ -9,6 +9,25 @@ const config: ZudokuConfig = {
       width: "30px",
     },
   },
+  docs: {
+    defaultOptions: {
+      toc: true,
+      disablePager: false,
+      showLastModified: true,
+    }
+  },
+  search: {
+    type: "pagefind",
+    // Optional: Maximum number of sub results per page
+    maxSubResults: 3,
+    // Optional: Configure search result ranking (defaults shown below)
+    ranking: {
+      termFrequency: 0.8,
+      pageLength: 0.6,
+      termSimilarity: 1.2,
+      termSaturation: 1.2,
+    },
+  },
   navigation: [
     {
       type: "category",
@@ -54,6 +73,13 @@ const config: ZudokuConfig = {
               items: [
                 "/cli/app/commands",
               ],
+            },
+            {
+              type: "category",
+              label: "Env",
+              items: [
+                "/cli/env/commands",
+              ],
             }
           ],
         }
@@ -66,7 +92,8 @@ const config: ZudokuConfig = {
     publisher: "Akuzo",
     creator: "Akuzo",
     referrer: "no-referrer",
-  }
+  },
+  
 };
 
 export default config;

@@ -1,7 +1,25 @@
 ---
-title: Using the CLI
+title: About the CLI
 ---
 
-# Introduction
+Akuzo provides a command-line interface (CLI) that allows you to manage your applications and resources directly from the terminal. The CLI is designed to be intuitive and easy to use, enabling you to perform various tasks such as creating, deploying, and deleting applications with simple commands.
 
 # Installation
+```bash
+npm install -g akuzo-cli
+```
+
+# Authentication
+First time you use the CLI, you will need to authenticate with your Akuzo account. Run the following command and follow the prompts to log in:
+
+```bash
+akuzo login
+```
+
+Authenticate to access your applications and resources securely. Once authenticated, you will have to set the default environment.
+
+```bash
+akuzo env list
+
+akuzo env set --id=<environment-id>
+```
